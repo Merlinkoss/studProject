@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  <string name="app_name">Прототип</string>
-  <string name="hello_world">Hello world!</string>
-  <string name="menu_settings">Настройки</string>
+    <string name="app_name">Прототип</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="enable_disable_flashlight">Вкл/Выкл вспышку</string>
+    <string name="your_ballo">Твои баллы:</string>
+    <string name="read_qr">Прочесть qr код</string>
+    <string name="current_matches">Текущие матчи: </string>
+    <string name="accept">Подтвердить</string>
+    <string name="cancel">Отменить</string>
+    <string name="checked">Распознано</string>
 
 </resources>
