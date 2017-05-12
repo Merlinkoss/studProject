@@ -1,4 +1,4 @@
-package com.example.qr_readerexample;
+package com.example.studprojectEx;
 
 import android.Manifest;
 import android.content.Intent;

@@ -1,4 +1,4 @@
-package com.example.qr_readerexample;
+package com.example.studprojectEx;
 
 import com.google.gson.JsonObject;
 

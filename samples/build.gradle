@@ -9,7 +9,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example.qr_readerexample"
+        applicationId "com.eltech.studprojectEx"
         minSdkVersion 14
         targetSdkVersion 25
     }

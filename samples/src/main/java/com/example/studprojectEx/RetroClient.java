@@ -1,4 +1,4 @@
-package com.example.qr_readerexample;
+package com.example.studprojectEx;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
