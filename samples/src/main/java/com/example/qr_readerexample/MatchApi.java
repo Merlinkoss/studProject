@@ -22,7 +22,7 @@ public interface MatchApi {
 	*/
 	@Multipart
 	@POST("/clien/")
-	Call<JsonObject> registrationUser(@Part MultipartBody.Part api, @Part MultipartBody.Part email);
+	Call<JsonObject> registrationUser(@Part MultipartBody.Part name, @Part MultipartBody.Part email, @Part MultipartBody.Part pass);
 
 	@Multipart
 	@POST("")
