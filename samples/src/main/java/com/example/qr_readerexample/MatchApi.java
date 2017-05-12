@@ -26,7 +26,7 @@ public interface MatchApi {
 
 	@Multipart
 	@POST("")
-	Call<JsonObject> uploadBackup(@Part MultipartBody.Part file, @Part MultipartBody.Part api, @Part MultipartBody.Part app, @Part MultipartBody.Part token);
+	Call<JsonObject> loginUser(@Part MultipartBody.Part login, @Part MultipartBody.Part pass);
 
 	@Multipart
 	@POST("")
