@@ -11,5 +11,8 @@
     <string name="accept">Подтвердить</string>
     <string name="cancel">Отменить</string>
     <string name="checked">Распознано</string>
+    <string name="check_in">Сканировать QR</string>
+    <string name="matches">Матчи</string>
+    <string name="tickets">Билеты</string>
 
 </resources>

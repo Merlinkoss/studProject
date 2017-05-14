@@ -13,7 +13,7 @@ public class RetroClient {
 	 * You will find this file in php_upload folder in this project
 	 * You can copy that folder and paste in your htdocs folder...
 	 */
-	private static final String ROOT_URL = "http:da.ru";
+	private static final String ROOT_URL = "http://207.154.242.90";
 
 
 	public RetroClient() {

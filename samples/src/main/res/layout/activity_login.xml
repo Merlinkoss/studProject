@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:weightSum="1">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_launcher"
-        android:layout_weight="0.65"/>
+        android:layout_gravity="center"
+        android:layout_weight="0.04">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_weight="0.65"
+            app:srcCompat="@drawable/football"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp" />
+    </android.support.constraint.ConstraintLayout>
 
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Введите ваш email"
+        android:hint="Введите ваш логин"
         android:inputType="textEmailAddress"/>
 
     <EditText
@@ -32,7 +48,15 @@
     <Button
         android:id="@+id/login"
         android:layout_width="match_parent"
+        android:layout_marginBottom="3dp"
         android:layout_height="wrap_content"
-        android:text="Login"/>
+        android:text="Войти" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:text="Зарегистрироваться" />
 
 </LinearLayout>

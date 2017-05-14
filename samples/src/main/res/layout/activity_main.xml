@@ -29,7 +29,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="15dp"
-        android:text="Name Surname"
+        android:text="Имя Фамилия"
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -78,15 +78,6 @@
             android:text="@string/check_in" />
 
         <Button
-            android:id="@+id/history_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="3dp"
-            android:layout_weight="1"
-            android:elevation="1dp"
-            android:text="@string/history" />
-
-        <Button
             android:id="@+id/matches_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -99,7 +90,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Tickets" />
+            android:text="@string/tickets" />
 
     </LinearLayout>
 
@@ -109,7 +100,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:textColor="@color/black"
-        android:text="Balanse: 1000pts"
+        android:text="Баланс: 1000 очков"
         app:layout_constraintTop_toBottomOf="@+id/user_email_tv"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"

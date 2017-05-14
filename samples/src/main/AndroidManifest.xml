@@ -14,31 +14,29 @@
       android:allowBackup="true"
       android:icon="@drawable/ic_launcher"
       android:label="@string/app_name"
-      android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
-      >
+      android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
     <activity
-        android:name="com.example.studprojectEx.LoginActivity"
-        android:label="@string/app_name"
-        >
+        android:name=".LoginActivity"
+        android:label="@string/app_name">
       <intent-filter>
-        <action android:name="android.intent.action.MAIN"/>
+        <action android:name="android.intent.action.MAIN" />
 
-        <category android:name="android.intent.category.LAUNCHER"/>
+        <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-
-    <activity android:name="com.example.studprojectEx.DecoderActivity"
-        android:label="@string/read_qr"/>
-
-    <activity android:name="com.example.studprojectEx.ResultActivity"
-              android:label="@string/read_qr"/>
-
     <activity
-        android:name="com.example.studprojectEx.MainActivity"
-        android:label="@string/app_name"/>
-
+        android:name=".DecoderActivity"
+        android:label="@string/read_qr" />
     <activity
-        android:name="com.example.studprojectEx.MatchActivity"
+        android:name=".ResultActivity"
+        android:label="@string/read_qr" />
+    <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name" />
+    <activity android:name=".MatchesActivity"
         android:label="Матчи"/>
+    <activity
+        android:name=".TicketsActivity"
+        android:label="Ваши билеты" />
   </application>
 </manifest>

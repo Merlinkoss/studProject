@@ -1,6 +1,7 @@
 package com.example.studprojectEx;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.util.Log;
 
 import com.google.gson.JsonObject;
@@ -16,13 +17,13 @@ import retrofit2.Response;
 
 public class NetworkUtil
 {
-	public static void loginMe(Activity activity, String email, String pass)
+	public static void loginMe(final Activity activity, String email, String pass)
 	{
 		MatchApi service = RetroClient.getApiService();
 
 		Call<JsonObject> resultCall = service.loginUser(
-				MultipartBody.Part.createFormData("email", email),
-				MultipartBody.Part.createFormData("pass", pass));
+				MultipartBody.Part.createFormData("login", email),
+				MultipartBody.Part.createFormData("password", pass));
 
 		resultCall.enqueue(new Callback<JsonObject>() {
 			@Override
@@ -30,6 +31,9 @@ public class NetworkUtil
 				try {
 					if (response.isSuccessful()) {
 						String token = response.body().get("token").getAsString();
+						Intent in = new Intent(activity, MainActivity.class);
+						in.putExtra("token", token);
+						activity.startActivity(in);
 						Log.d("CloudS", token);
 					} else {
 						Log.e("CloudD", "error");

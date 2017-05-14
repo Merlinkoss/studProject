@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Вы приобрели булочку за 125 рублей"
-        android:textColor="#32a7f0"
+        android:textColor="@color/black"
         android:textSize="28sp"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"

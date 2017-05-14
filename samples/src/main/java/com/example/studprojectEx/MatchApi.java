@@ -25,7 +25,7 @@ public interface MatchApi {
 	Call<JsonObject> registrationUser(@Part MultipartBody.Part name, @Part MultipartBody.Part email, @Part MultipartBody.Part pass);
 
 	@Multipart
-	@POST("")
+	@POST("/api/signin/")
 	Call<JsonObject> loginUser(@Part MultipartBody.Part login, @Part MultipartBody.Part pass);
 
 	@Multipart
